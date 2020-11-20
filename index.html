@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Mark</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- /bootstarp -->
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/804f9c1a56.js" crossorigin="anonymous"></script>
+    <!-- /fontawesome -->
+
+    <!-- Basic -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <!-- /Basic -->
+</head>
+<body>
+    <div id="wrap" class="container">
+        <div id="search_location">
+            <p>검색위치</p>
+            <input type="text" value="C:\Program Files">
+        </div>
+
+        <form id="search_form">
+            <h2 id="search_title">File Mark</h2>
+            <div id="search_input_box">
+                <input type="text" hidden id="option" name="option" value="name">
+                <div id="option_box">
+                    <p id="search_option"><span>이름</span><i class="fas fa-angle-down"></i></p>
+                    <div id="search_option_box">
+                        <p data-option="name" data-name="이름" data-value="text" class="select"><span>이름</span><i class="fas fa-check"></i></p>
+                        <p data-option="exp" data-name="확장자" data-value="text"><span>확장자</span><i class="fas fa-check"></i></p>
+                        <p data-option="ctime" data-name="생성날짜" data-value="date"><span>생성날짜</span><i class="fas fa-check"></i></p>
+                        <p data-option="mtime" data-name="수정날짜" data-value="date"><span>수정날짜</span><i class="fas fa-check"></i></p>
+                        <p data-option="atime" data-name="접근날짜" data-value="date"><span>접근날짜</span><i class="fas fa-check"></i></p>
+                        <p data-option="size" data-name="용량" data-value="text"><span>용량</span><i class="fas fa-check"></i></p>
+                        <p data-option="path" data-name="경로" data-value="text"><span>경로</span><i class="fas fa-check"></i></p>
+                        <p data-option="regex" data-name="정규식" data-value="text"><span>정규식</span><i class="fas fa-check"></i></p>
+                    </div>
+                </div>
+                <div id="input_box" class="text">
+                    <input type="text" id="search" placeholder="Search Word...">
+                    <div id="form_date">
+                        <input type="date" name="firstDate" id="firstDate">
+                        <span>~</span>
+                        <input type="date" name="LastDate" id="LastDate">
+                        <button id="DateBtn" type="button"><i class="fas fa-search text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <p>Copyright 2020 연지수 all rights reserved</p>
+            <div id="footer_menu">
+                <span data-type="ver" class="open_bc">ver 1.0.0</span>
+                <span data-type="what" class="open_bc">What is the File Mark?</span>
+                <span data-type="how" class="open_bc">How use File Mark?</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
