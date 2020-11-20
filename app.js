@@ -8,6 +8,7 @@ class App{
 
         this.event();
         this.optionBtnSet();
+        document.querySelector("#research").addEventListener("click",()=>{this.researchEvent();})
         this.search_input.addEventListener("keydown",(e)=>{this.searchDown(e)});
     }
 
@@ -89,7 +90,16 @@ class App{
     }
 
     searchProcess(val){
-        console.log(val);
+        document.querySelector("#search_form").classList.add("close");
+        document.querySelector("#search_result_area").classList.remove("close");
+        document.querySelector("#search_keyword").innerHTML = val;
+        document.querySelector("#search_option").classList.remove("open");
+    }
+    
+    researchEvent(){
+        document.querySelector("#search_form").classList.remove("close");
+        document.querySelector("#search_result_area").classList.add("close");
+        document.querySelector("#search_keyword").innerHTML = "";
     }
 }
 

@@ -27,7 +27,8 @@
             <input type="text" value="C:\Program Files">
         </div>
 
-        <form id="search_form">
+        <!-- search_form -->
+        <div id="search_form">
             <h2 id="search_title">File Mark</h2>
             <div id="search_input_box">
                 <input type="text" hidden id="option" name="option" value="name">
@@ -54,7 +55,32 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+        <!-- /search-form -->
+
+        <!-- search -->
+        <div id="search_result_area" class="close">
+            <div id="search_result_title">
+                <span id="search_keyword" class="mr-1">sdf</span>
+                <span>의 검색결과</span>
+            </div>
+            <button id="research">
+                <i class="fas fa-redo"></i>
+            </button>
+            <div id="result_list">
+                <!-- <div class="result">
+                    <span>FileName</span>
+                </div>
+                <div class="result">
+                    <span>FileName</span>
+                </div>
+                <div class="result">
+                    <span>FileName</span>
+                </div> -->
+                <p id="search_Notfound">검색결과를 찾을 수 없습니다.</p>
+            </div>
+        </div>
+        <!-- /search -->
         <footer>
             <p>Copyright 2020 연지수 all rights reserved</p>
             <div id="footer_menu">
